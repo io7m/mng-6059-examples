@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.io7m.b</groupId>
+    <artifactId>com.io7m.b</artifactId>
+    <version>1.0.0</version>
+  </parent>
+
+  <groupId>com.io7m.c</groupId>
+  <artifactId>com.io7m.c</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+
+  <name>com.io7m.c</name>
+  <description>Example C</description>
+  <url>http://www.io7m.com/</url>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.0.0</version>
+        <executions>
+          <execution>
+            <id>default-jar</id>
+            <configuration>
+              <archive>
+                <manifestEntries>
+                  <Field-URL>${project.url}</Field-URL>
+                  <Field-SCM>${project.scm.url}</Field-SCM>
+                  <Field-Site>${project.distributionManagement.site.url}</Field-Site>
+                </manifestEntries>
+              </archive>
+            </configuration>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

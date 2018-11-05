@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.io7m.a</groupId>
+    <artifactId>com.io7m.a</artifactId>
+    <version>1.0.0</version>
+  </parent>
+
+  <groupId>com.io7m.b</groupId>
+  <artifactId>com.io7m.b</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+
+  <name>com.io7m.b</name>
+  <description>Example B</description>
+  <url>http://www.io7m.com/</url>
+
+  <modules>
+    <module>c</module>
+  </modules>
+
+  <scm>
+    <url>https://github.com/io7m/mng-6059-examples</url>
+    <connection>scm:git:https://github.com/io7m/mng-6059-examples</connection>
+    <developerConnection>scm:git:https://github.com/io7m/mng-6059-examples</developerConnection>
+  </scm>
+
+  <distributionManagement>
+    <site>
+      <id>io7m.com</id>
+      <name>io7m.com</name>
+      <url>https://www.io7m.com/software/mng-6059-examples</url>
+    </site>
+    <repository>
+      <id>sonatype-nexus-staging</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+    <snapshotRepository>
+      <id>sonatype-nexus-snapshots</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+</project>
